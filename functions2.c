@@ -14,7 +14,7 @@ int print_pointer(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char extra_c = 0, padd = ' ';
-	int ind = BUFF_SIZE - 2, length = 2, padd_start = 1; /* length=2, for '0x' */
+	int ind = BUFF_SIZE - 2, length = 2, padd_start = 1;
 	unsigned long num_addrs;
 	char map_to[] = "0123456789abcdef";
 	void *addrs = va_arg(types, void *);
@@ -134,7 +134,7 @@ int print_reverse(va_list types, char buffer[],
 
 /**
  * print_rot13string - Print a string in rot13.
- * @types: Lista of arguments
+ * @types: Lists of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width
